@@ -1,17 +1,18 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon, Command, Update Interval, Update Signal*/
-	{"", "echo $(pacman -Qq | wc -l) packages", 10, 0},
 
-	{"ram ", "free -h | grep Mem | awk '{print $3}' | sed s/Gi/gb/ | sed s/Mi/mb/", 5, 0},
+	{"", "bash ~/.local/bin/statusbar/music.sh", 1, 20},
 
-	{"", "nmcli device | grep 'wifi ' | awk '{print $4}'", 1, 0},
+	{"", "bash ~/.local/bin/statusbar/ram.sh", 1, 0},
 
-	{"bat ", "echo $(cat /sys/class/power_supply/BAT0/capacity)%", 1, 0},
+	{"", "bash ~/.local/bin/statusbar/wifi.sh", 1, 0},
 
-	{"vol ", "pamixer --get-volume-human", 60, 10},
+	{"", "bash ~/.local/bin/statusbar/battery.sh", 1, 0},
 
-	{"", "date '+%a %d %b, %H:%M'", 5, 0},
+	{"", "bash ~/.local/bin/statusbar/volume.sh", 1, 10},
+
+	{"", "bash ~/.local/bin/statusbar/datetime.sh", 1, 0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
