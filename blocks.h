@@ -8,8 +8,6 @@ static const Block blocks[] = {
 
 	{"", "bash ~/.local/bin/statusbar/wifi.sh", 1, 0},
 
-	{"", "bash ~/.local/bin/statusbar/backlight.sh", 1, 30},
-
 	{"", "bash ~/.local/bin/statusbar/battery.sh", 1, 0},
 
 	{"", "bash ~/.local/bin/statusbar/volume.sh", 1, 10},
