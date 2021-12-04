@@ -4,8 +4,6 @@ static const Block blocks[] = {
 
 	{"", "bash ~/.local/bin/statusbar/music.sh", 1, 20},
 
-	{"", "bash ~/.local/bin/statusbar/countdown.sh", 60, 0},
-
 	{"", "bash ~/.local/bin/statusbar/temp.sh", 5, 0},
 
 	{"", "bash ~/.local/bin/statusbar/ram.sh", 5, 0},
