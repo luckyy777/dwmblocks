@@ -3,14 +3,12 @@ static const Block blocks[] = {
 	/*Icon, Command, Update Interval, Update Signal*/
 
 	{"", "bash ~/.local/bin/statusbar/music.sh", 1, 20},
-	
-	{"", "bash ~/.local/bin/statusbar/twitter.sh", 60, 0},
-
-	{"", "bash ~/.local/bin/statusbar/facebook.sh", 60, 0},
 
 	{"", "bash ~/.local/bin/statusbar/ram.sh", 5, 0},
 
 	{"", "bash ~/.local/bin/statusbar/wifi.sh", 1, 0},
+
+	{"", "bash ~/.local/bin/statusbar/battery.sh", 1, 0},
 
 	{"", "bash ~/.local/bin/statusbar/volume.sh", 1, 10},
 
